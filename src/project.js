@@ -1198,7 +1198,7 @@ window.__require = function e(t, n, o) {
         },
           // 生成水果
           t.prototype.createOneFruit = function (e) {
-            var t = this, n = cc.instantiate(this.fruitPre);
+            var t = this, n = cc.instantiate(this.fruitPre),e=0;
             n.parent = this.lineNode;
             n.getComponent(cc.Sprite).spriteFrame = d.default.Instance.fruit[e];
             n.children[0].getComponent(cc.Sprite).spriteFrame = d.default.Instance.fruit[e];
